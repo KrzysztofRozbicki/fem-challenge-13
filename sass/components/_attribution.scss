@@ -6,14 +6,15 @@
   bottom: 0.5rem;
   left: 50%;
   transform: translateX(-50%);
-  @include text(var(--fs-300), var(--text-primary-500), 400, 1.2);
+  @include text(var(--fs-300), var(--text-primary-100), 400, 1.2);
   &__link {
-    color: var(--text-primary-600);
+    font-family: var(--ff-secondary);
+    color: inherit;
     font-weight: 700;
     transition: 0.3s ease-in;
     &:hover,
     &:focus {
-      color: var(--blue);
+      color: var(--button-accent-500);
     }
   }
 }

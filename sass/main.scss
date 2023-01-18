@@ -4,22 +4,32 @@
 body {
   font-family: var(--ff-primary);
   position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   min-height: 100vh;
   text-align: center;
+  background: url('../images/bg-mobile.svg') no-repeat;
+  background-size: contain;
   background-color: var(--bg-primary-500);
 }
 
-.wrapper {
-  padding: 5.25rem 2rem 4.875rem;
-  max-width: 74rem;
-}
-
-@media (min-width: $desktop-size) {
-  .wrapper {
-    padding-top: 5rem;
+.header {
+  padding-top: 2.375rem;
+  padding-bottom: 3.375rem;
+  text-align: left;
+  &__logo {
+    width: 7.5rem;
   }
 }
+
+.hero {
+  &__photo {
+    margin-bottom: 3.75rem;
+  }
+  &__header {
+    margin-bottom: 1rem;
+  }
+  &__text {
+    margin-bottom: 1.5rem;
+  }
+}
+
+

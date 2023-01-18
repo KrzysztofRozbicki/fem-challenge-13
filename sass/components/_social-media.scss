@@ -1,0 +1,32 @@
+@use '../utils/vars' as *;
+
+.social-media {
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.6875rem;
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0.25rem;
+    border-radius: 50%;
+    border: 1px solid var(--text-primary-100);
+    fill: var(--text-primary-100);
+    transition: 0.3s ease-in-out;
+    &:focus,
+    &:hover {
+      border-color: var(--button-accent-500);
+      fill: var(--button-accent-500);
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .social-media__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+  }
+}
