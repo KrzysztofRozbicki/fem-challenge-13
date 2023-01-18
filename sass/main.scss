@@ -1,0 +1,25 @@
+@use '../sass/utils' as *;
+@use '../sass/components' as *;
+
+body {
+  font-family: var(--ff-primary);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: var(--bg-primary-500);
+}
+
+.wrapper {
+  padding: 5.25rem 2rem 4.875rem;
+  max-width: 74rem;
+}
+
+@media (min-width: $desktop-size) {
+  .wrapper {
+    padding-top: 5rem;
+  }
+}

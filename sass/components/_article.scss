@@ -1,0 +1,67 @@
+@use '../utils' as *;
+
+:root {
+  --padding: 1.75rem;
+}
+.article {
+    flex: 1;
+  background-color: var(--bg-primary-100);
+  box-shadow: 0px 15px 30px -11px var(--shadow-primary-500);
+  border-radius: 0.5rem;
+  padding: var(--padding) var(--padding) 7.375rem;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  max-width: 21.875rem;
+  & *:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3.5px;
+    width: 100%;
+  }
+
+  @each $color in cyan, red, orange, blue {
+  }
+  &--supervisor {
+    background: url('../images/icon-supervisor.svg') bottom var(--padding) right var(--padding)
+      no-repeat;
+    & :after {
+      background-color: var(--cyan);
+    }
+  }
+
+  &--team-builder {
+    background: url('../images/icon-team-builder.svg') bottom var(--padding) right var(--padding)
+      no-repeat;
+    & :after {
+      background-color: var(--red);
+    }
+  }
+
+  &--karma {
+    background: url('../images/icon-karma.svg') bottom var(--padding) right var(--padding) no-repeat;
+    & :after {
+      background-color: var(--orange);
+    }
+  }
+
+  &--calculator {
+    background: url('../images/icon-calculator.svg') bottom var(--padding) right var(--padding)
+      no-repeat;
+    & :after {
+      background-color: var(--blue);
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  :root {
+    --padding: 2rem;
+  }
+
+  .article {
+    padding-bottom: 8.5rem;
+  }
+}

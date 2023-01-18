@@ -1,0 +1,30 @@
+:root {
+  --ff-primary: 'Poppins', sans-serif;
+
+  --fs-300: 0.5rem;
+  --fs-500: 0.8125rem; //13px
+  --fs-600: 0.9375rem; //15px
+  --fs-700: 1.25rem; //20px
+  --fs-900: 1.5rem; //24px
+
+  --bg-primary-100: #ffffff;
+  --bg-primary-500: #fafafa;
+
+  --text-primary-500: hsl(229, 6%, 66%);
+  --text-primary-600: hsl(234, 12%, 34%);
+
+  --shadow-primary-500: rgba(131, 166, 210, 0.5);
+
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+}
+
+$desktop-size: 64em;
+
+@media (min-width: $desktop-size) {
+  :root {
+    --fs-900: 2.25rem; //36px
+  }
+}
