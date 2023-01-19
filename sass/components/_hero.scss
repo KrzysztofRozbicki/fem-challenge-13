@@ -1,0 +1,29 @@
+@use '../utils' as *;
+
+.hero {
+  &__photo {
+    margin-bottom: 3.75rem;
+  }
+  &__header {
+    margin-bottom: 1rem;
+  }
+  &__text {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .hero__photo {
+    width: min(50vw, 43.5rem);
+    margin-bottom: 0;
+  }
+  .hero__section {
+    padding-top: 2rem;
+    text-align: left;
+    max-width: 31.25rem;
+  }
+
+  .hero__header {
+    margin-bottom: 1.5rem;
+  }
+}

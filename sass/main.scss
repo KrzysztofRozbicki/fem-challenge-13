@@ -11,25 +11,9 @@ body {
   background-color: var(--bg-primary-500);
 }
 
-.header {
-  padding-top: 2.375rem;
-  padding-bottom: 3.375rem;
-  text-align: left;
-  &__logo {
-    width: 7.5rem;
+@media (min-width: $desktop-size) {
+  body {
+    background-image: url('../images/bg-desktop.svg');
+    background-size: contain;
   }
 }
-
-.hero {
-  &__photo {
-    margin-bottom: 3.75rem;
-  }
-  &__header {
-    margin-bottom: 1rem;
-  }
-  &__text {
-    margin-bottom: 1.5rem;
-  }
-}
-
-

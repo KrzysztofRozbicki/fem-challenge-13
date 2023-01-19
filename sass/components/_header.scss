@@ -1,0 +1,21 @@
+@use '../utils' as *;
+
+.header {
+  padding-top: 2.375rem;
+  padding-bottom: 3.375rem;
+  text-align: left;
+  &__logo {
+    width: 7.5rem;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .header {
+    padding-top: 4rem;
+    padding-bottom: 6.5rem;
+  }
+
+  .header__logo {
+    width: 12.5rem;
+  }
+}
